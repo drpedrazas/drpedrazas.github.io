@@ -36,12 +36,41 @@
   <H3 Style = "Text-Align:Center; Color: Black; Background: White"> Computer Science And Mathematics</H3>
   <Header Class = "Square">
     <H2 Style = "Text-Align:Center; Color: Black">Portfolio</H2>
-    <P Align="Justify"> You can at some of my projects on this page. They are separated in several categories so that you can check what you are most interested in.</P>
-    <button type="button" class="collapsible">Open Collapsible</button>
+    <P Align="Justify"> You can look at some of my projects on this page. They are separated in several categories so that you can check what you are most interested in.</P>
+    <button type="button" class="collapsible">Basic Python projects</button>
     <div class="content">
-      <p>Lorem ipsum...</p>
-  </div>
+  <p>Converting video into ascii art!</p>
+  <p>Take a look into some classic cryptosystems with a friendly interface!</p>
+</div>
+<button type="button" class="collapsible">Basic Machine Learning and Data Science projects</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Personal Machine Learning and Data Science projects</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Basic Java projects</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
   <Img Src="owl.jpeg" Style= "Display: Block; Margin-Left:Auto; Margin-Right: Auto; Width: 50%; Border-Radius: 0%;">
   </Header>
+  <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 </Main>
